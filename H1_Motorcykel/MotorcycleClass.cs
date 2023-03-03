@@ -59,6 +59,11 @@ namespace H1_Motorcykel
 
         public void StartEngine()
         {
+            if (_engineIsStarted)
+            {
+                return;
+            }
+
             _engineIsStarted = true;
             _currentRpm = 1000;
             _currentGear = 0;
