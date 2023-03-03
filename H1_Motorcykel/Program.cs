@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MotorcycleClass Motorcycle = new MotorcycleClass();
+
+            Motorcycle.StartEngine();
+            Motorcycle.ShiftGearUp();
+            Motorcycle.ShiftGearUp();
+            Motorcycle.SetRpm(5000);
+
+            Console.WriteLine(Motorcycle.toString());
+
+
+            Console.ReadKey();
         }
     }
 }

@@ -103,7 +103,7 @@ namespace H1_Motorcykel
             return false;
         }
 
-        public string toString(int padding = 12)
+        public string toString(int padding = 16)
         {
             string output =
                 "Name:".PadRight(padding) + Name + Environment.NewLine +
