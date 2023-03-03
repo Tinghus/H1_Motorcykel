@@ -99,7 +99,7 @@ namespace H1_Motorcykel
 
         public bool ShiftGearDown(int newGear)
         {
-            if (newGear < _currentGear && newGear >= 0) // We should also allow them to place the motor in idle
+            if (newGear < _currentGear && newGear > 0) // We should also allow them to place the motor in idle
             {
                 _currentGear = newGear;
                 return true;
