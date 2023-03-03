@@ -57,6 +57,11 @@ namespace H1_Motorcykel
             return _currentRpm;
         }
 
+        public int GetGear()
+        {
+            return _currentGear;
+        }
+
         public void StartEngine()
         {
             if (_engineIsStarted)
