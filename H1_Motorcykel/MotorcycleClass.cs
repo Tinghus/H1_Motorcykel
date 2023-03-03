@@ -14,6 +14,22 @@ namespace H1_Motorcykel
         private int _currentRpm;
         private int _currentGear;
 
+        public MotorcycleClass()
+        {
+            Name = string.Empty;
+            _engineIsStarted = false;
+            _currentGear = 0;
+            _currentRpm = 0;
+        }
+
+        public MotorcycleClass(string name, bool engineIsStarted)
+        {
+            Name = name;
+            _engineIsStarted = engineIsStarted;
+
+            _currentRpm = _engineIsStarted ? 1000 : 0;
+        }
+
         public bool SetRpm(int rpm)
         {
             if (!_engineIsStarted)
